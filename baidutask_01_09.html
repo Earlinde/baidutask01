@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>baidu_task_01_09</title>
+	<style>
+	*{margin:0;padding: 0;}
+	a{text-decoration: none;}
+	select{border: 1px solid #afb0b0;}
+
+
+	.box1{width: 100%;height: 55px;background: #2189bf;}
+	.box1_2{width: 50px;height: 15px;}
+
+	.box2{width: 19%; height: 1200px;float: left;background:#2a2e3d;}
+	.box2_2{width: 100%;height: 150px;background: #2a2e3d;}
+	.box2_2_2{width: 57px;height: 57px;border-radius: 57px;border:1px solid #b9babd;margin: 10px 0 0 45px;float: left;}
+	.box2_2_3{width: 54px;height: 54px;border-radius: 54px;background: #b9babd;margin:2px;}
+	.box2_2_4{width: 100px;height: 30px;text-align: center;float: left;margin: 40px 0 6px 0;}
+	.box2_2_5{width: 75px;height: 50px;text-align: center;float: left;margin-top: 18px;}
+	.box2_2_6{width: 2px;height: 30px;background: #313545;float: left;}
+	.box2_3{width: 100%;height: 210px;margin-top: 13px;float: left;}
+	.box2_3 p{font-size: 12px;}
+	.box2_3_2{width: 100%;height: 35px;background: #383d4e;}
+	.box2_4{width: 100%;height: 50px;background: #2a2e3d;padding: 16px 0 0 45px;float: left;}
+	.box2_4 img{margin-right: 13px;}
+	.box2_4 p{font-size: 12px;color: #6e8096;}
+
+	.box3{width: 81%;height: 1200px;background: #eeeeed;float: left;}
+	.box3_2{width: 100%;height: 30px;background: #fff;float: left;}
+	.box3_3{width: 83.25%;height: 55px;margin: 19px 70px 0 59px;background: #fff;float: left;border: 1px solid #cacdd0;font-size: 12px;padding:  15px 3% 15px 3%;color: #6e8096;}
+	.box3_3 div{ float: left;}
+	.box3_4{width: 3.15%;height: 63px;background: #fff;border: 1px solid #cacdd0;margin: 8px 0 0 59px;float: left;}
+	.box3_5{width: 10.8%;height: 63px;background: #fff;border: 1px solid #cacdd0;margin: 8px 0 0 5px;float: left;text-align: center;}
+	.box3_5:hover{height: 61px;border: none;border-top: 3px solid #4388c8;}
+	.box3_6{width: 12.8%;height: 63px;background: #fff;border: 1px solid #cacdd0;margin: 8px 0 0 5px;float: left;}
+	.box3_7{width: 20.2%;height: 70px;background: #fff;border: 1px solid #cacdd0;margin: 39px 0 0 28px;float: left;}
+	.box3_7_2{width: 3px;height: 100%;float: left;}
+	.box3_7_3{width: 60px;height: 46px;float: right;margin: 11px 14px 0 0;}
+	.box3_8{width: 53%;height: 355px;background: #fff;border: 1px solid #cacdd0;margin: 13px 0 0 8px;float: left;border-radius: 5px;}
+	.box3_8_2{width: 100%;height: 39px;background: #f4f6f7;border-radius: 5px;}
+	.box3_8_3{width: 85px;height: 27px;background:#ededf0;text-align: center;float: left;margin-right: 3px;border-radius: 5px;margin-top: 13px;}
+	.box3_8_3:hover{width: 83px;height: 25px;background:#fff;border: 1px solid #cacbcb;border-bottom: none;}
+	.box3_8_4{width: 405px;height: 185px;border: 1px solid #cacbcb;float: left;margin-left: 20px;border-radius: 5px;padding: 30px 50px 35px 35px;}
+	.box3_8_4 table{font-size: 12px;color: #616164;}
+	.box3_8_4 td{border:1px solid #d2d2d3;width: 100px;height: 30px;text-align: center;}
+	.box3_8_5{width: 168px;height: 4px;background:#eee;float: right;position: relative;left: -10%;}
+	.rank1{width: 70%;height: inherit;background: #ed6e52;}
+	.rank2{width: 65%;height: inherit;background: #ef8050;}
+	.rank3{width: 60%;height: inherit;background: #f19e4f;}
+	.rank4{width: 55%;height: inherit;background: #7ecaef;}
+	.rank5{width: 50%;height: inherit;background: #7ecaef;}
+	.rank6{width: 45%;height: inherit;background: #7ecaef;}
+	.rank7{width: 40%;height: inherit;background: #7ecaef;}
+	.rank8{width: 35%;height: inherit;background: #7ecaef;}
+	.rank9{width: 30%;height: inherit;background: #7ecaef;}
+	.rank10{width: 25%;height: inherit;background: #7ecaef;}
+	.box3_9{width: 35%;height: 355px;background: #fff;border: 1px solid #cacdd0;margin: 13px 0 0 8px;float: left;border-radius: 5px;}
+	.box3_9_2{width: 100%;height: 39px;background: #f4f6f7;border-radius: 5px;}
+	</style>
+</head>
+<body>
+<div class="box1">
+	<img src="baidu_task_9_1_1.png" style="margin: 10px 0 0 50px;">
+	<input type="text" style="width: 26%;height:30px;background: #fff;border-radius: 15px;position: absolute;right: 13%;margin-top: 10px;"></input>
+	<img src="baidu_task_9_1_2.png" style="position: absolute;right: 10%;margin-top: 17px;">
+	<a href="#"style="font-size: 12px;color: #fff;position: absolute;right: 7.2%;margin-top: 20px;">登录</a>
+	<img src="baidu_task_9_1_3.png" style="position: absolute;right: 36.25%;margin-top: 17px;">
+</div>
+
+
+<div class="box2">
+	<div class="box2_2">
+		<div class="box2_2_2">
+			<div class="box2_2_3"></div>
+		</div>
+		<div class="box2_2_4">
+			<p style="font-size: 12px;color: #fff;">ABC123</p>
+		</div>
+		<div class="box2_2_5" style="margin-left: 45px;">
+			<p style="font-size: 12px;color: #6e8095;">110</p>
+			<p style="font-size: 12px;color: #6e8095;">收藏</p>
+		</div>
+		<div class="box2_2_6"></div>
+		<div class="box2_2_5">
+			<p style="font-size: 12px;color: #6e8095;">313</p>
+			<p style="font-size: 12px;color: #6e8095;">粉丝</p>
+		</div>
+	</div>
+
+	<div class="box2_3">
+		<div class="box2_3_2">
+			<img src="baidu_task_9_2_1.png" style="margin-left: 45px;float: left;margin-right: 13px;">
+			<p style="float: left;color: #ededf0;">个人报表</p>
+		</div>
+		<div class="box2_3_2">
+			<img src="baidu_task_9_2_5.png" style="margin-left: 70px;float: left;margin-right: 9px;">
+			<img src="baidu_task_9_2_2.png" style="float: left;margin-right: 9px;">
+			<p style="float: left;color: #6e8095;">文件</p>
+
+		</div>
+		<div class="box2_3_2">
+			<img src="baidu_task_9_2_3.png" style="margin-left: 70px;float: left;margin-right: 9px;">
+			<img src="baidu_task_9_2_4.png" style="float: left;margin-right: 9px;">
+			<p style="float: left;color: #ededf0;">文件</p>
+
+		</div>
+		<div class="box2_3_2">	
+			<img src="baidu_task_9_2_7.png" style="margin-left: 100px;float: left;margin-right: 9px;">	
+			<p style="float: left;color: #ededf0;">文件</p>
+
+		</div>
+		<div class="box2_3_2">
+			<img src="baidu_task_9_2_6.png" style="margin-left: 100px;float: left;margin-right: 9px;">
+			<p style="float: left;color: #6e8095;">文件</p>
+
+		</div>
+		<div class="box2_3_2">
+			<img src="baidu_task_9_2_5.png" style="margin-left: 70px;float: left;margin-right: 9px;">
+			<img src="baidu_task_9_2_2.png" style="float: left;margin-right: 9px;">
+			<p style="float: left;color: #6e8095;">文件</p>
+
+		</div>
+	</div>
+
+	<div class="box2_4">
+		<img src="baidu_task_9_3_1.png" style="float: left;margin-right: 9px;">
+		<p>个人收藏</p>
+	</div>
+	<div class="box2_4">
+		<img src="baidu_task_9_3_2.png" style="float: left;margin-right: 9px;">
+		<p>我的分享</p>
+	</div>
+	<div class="box2_4">
+		<img src="baidu_task_9_3_1.png" style="float: left;margin-right: 9px;">
+		<p>图库</p>
+	</div>
+	<div class="box2_4">
+		<img src="baidu_task_9_3_1.png" style="float: left;margin-right: 9px;">
+		<p>成长记录</p>
+	</div>
+	<div class="box2_4">
+		<img src="baidu_task_9_3_3.png" style="float: left;margin-right: 9px;">
+		<p>账户信息</p>
+	</div>
+</div>
+
+
+<div class="box3">
+	<div class="box3_2">
+		<p style="margin-left: 30px;line-height: 30px;font-size: 12px;color: #ababab;">C站&nbsp;\&nbsp;个人报表&nbsp;\&nbsp;文件一&nbsp;\&nbsp;<span style="color: #2189bf;">文档一</span></p>
+	</div>
+
+	<div class="box3_3">
+		<div style="width: 358px;height: 100%;margin-right: 30px;float: left;">
+		查询项:
+			<select style="width: 68px;height: 23px;margin-right: 36px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			买方：
+			<select style="width: 118px;height: 23px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<span style="position: relative;top: 30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卖方：</span>
+			<select style="width: 118px;height: 23px;margin-left: 200px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<div style="width: 30px;height: 100%;float: right;position: relative;top: -50%;"><img src="baidu_task_9_3_1.jpg"></div>
+		</div>
+		<div style="width: 358px;height: 100%;margin-right: 30px;float: left;">
+			日期：
+			<select style="width: 118px;height: 23px;margin-right: 15px;margin-bottom: 10px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			总耗时:
+			<select style="width: 73px;height: 23px;margin-right: 50px;margin-bottom: 10px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			人数：
+			<select style="width: 68px;height: 23px;margin-right: 15px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			成交项：
+			<select style="width: 118px;height: 23px;">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+		</div>
+		<input type="submit" style="width: 50px;height: 25px;background: #388bc2;float: left;color: #fff;position: relative;top: 20%;" value="搜索"></input>
+	</div>
+
+	<div class="box3_4">
+		<img src="baidu_task_9_2_8.png" style="position: relative;top: 30%;left: 40%;">
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">10:00am</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1200</p>
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">11:00am</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1300</p>
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">12:00am</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1200</p>
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">1:00pm</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1400</p>
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">2:00pm</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1500</p>
+	</div>
+	<div class="box3_5">
+		<p style="font-size: 9px;line-height: 34px;">3:00am</p>
+		<p style="font-size: 18px;color: #ec6500;"><span style="font-size: 12px;color: #adadad;">¥</span>1800</p>
+	</div>
+	<div class="box3_4" style="margin-left: 8px;">
+		<img src="baidu_task_9_2_5.png" style="position: relative;top: 30%;left: 40%;">
+	</div>
+	<div class="box3_6">
+		<img src="baidu_task_9_3_2.jpg" style="margin: 15px 0 0 20px;">
+		<span style="font-size: 12px;position: relative;top: -20%;">历史查询</span>
+	</div>
+
+	<div class="box3_7" style="margin-left: 59px;">
+		<div class="box3_7_2" style="background: #44b29e;"> </div>
+		<div style="width: 65px;height: 44px;float: left;"> 
+			<p style="font-size: 9px;line-height: 44px;margin-left: 8px;">1111111</p>
+			<p style="font-size: 9px;color: #b0b0b0;margin-left: 8px;">成交量</p>
+		</div>
+		<div class="box3_7_3" style="background: #44b29e;float:right;"> </div>
+	</div>
+	<div class="box3_7">
+		<div class="box3_7_2" style="background: #388ac1;"> </div>
+		<div style="width: 65px;height: 44px;float: left;"> 
+			<p style="font-size: 9px;line-height: 44px;margin-left: 8px;">1111111</p>
+			<p style="font-size: 9px;color: #b0b0b0;margin-left: 8px;">成交量</p>
+		</div>
+		<div class="box3_7_3" style="background: #388ac1;"> </div>
+	</div>
+	<div class="box3_7">
+		<div class="box3_7_2" style="background: #d04a36;"> </div>
+		<div style="width: 65px;height: 44px;float: left;"> 
+			<p style="font-size: 9px;line-height: 44px;margin-left: 8px;">1111111</p>
+			<p style="font-size: 9px;color: #b0b0b0;margin-left: 8px;">成交量</p>
+		</div>
+		<div class="box3_7_3" style="background: #d04a36;"> </div>
+	</div>
+	<div class="box3_7">
+		<div class="box3_7_2" style="background: #e2cd46;"> </div>
+		<div style="width: 65px;height: 44px;float: left;"> 
+			<p style="font-size: 9px;line-height: 44px;margin-left: 8px;">1111111</p>
+			<p style="font-size: 9px;color: #b0b0b0;margin-left: 8px;">成交量</p>
+		</div>
+		<div class="box3_7_3" style="background: #e2cd46;"> </div>
+	</div>
+
+	<div class="box3_8" style="margin-left: 59px;">
+		<div class="box3_8_2"><p style="font-size: 12px;color: #afb0b0;line-height: 39px;margin-left: 20px;">第一组项目</p></div>
+		<div class="box3_8_3" style="margin-left: 20px;"><p style="font-size: 12px;line-height: 27px;">项目一</p></div>
+		<div class="box3_8_3"><p style="font-size: 12px;line-height: 27px;">项目一</p></div>
+		<div class="box3_8_3"><p style="font-size: 12px;line-height: 27px;">项目一</p></div>
+		<div class="box3_8_3"><p style="font-size: 12px;line-height: 27px;">项目一</p></div>
+		<div class="box3_8_3"><p style="font-size: 12px;line-height: 27px;">项目一</p></div>
+		<div class="box3_8_4">
+			<table cellspacing="0" rules="groups" border="1" style="border-color: #cbcbcb;">
+				<tr>
+					<td style="background:#f3f5f6;">购买材料一</td>
+					<td >购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+				<tr>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+				<tr>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+				<tr>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+				<tr>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+				<tr>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+					<td>购买材料一</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="box3_9">
+		<div class="box3_9_2"><p style="font-size: 12px;color: #afb0b0;line-height: 39px;margin-left: 20px;">第一组项目</p></div>
+		<table style="width: 290px;height: 230px;margin: 15px 0 0 35px;">
+			<tr style="height: 20%;">
+					<td colspan="2" style="border-bottom: 1px solid #afb0b0;">
+						<p style="font-size: 12px;color: #afb0b0;">标题</p>
+						<p style="font-size: 12px;">项目报表三</p>
+					</td>
+			</tr>
+			<tr style="height: 20%;">
+					<td style="width: 40%;border-bottom: 1px solid #afb0b0;border-right: 1px solid #afb0b0;">
+						<p style="font-size: 12px;color: #afb0b0;">价格</p>
+						<p style="font-size: 12px;">158</p>
+					</td>
+					<td style="border-bottom: 1px solid #afb0b0;">
+					<p style="font-size: 12px;color: #afb0b0;">负责人</p>
+					<p style="font-size: 12px;">小A</p>
+					</td>
+			</tr>
+			<tr>
+					<td colspan="2" style="border-bottom: 1px solid #afb0b0;">
+					<p style="font-size: 12px;color: #afb0b0;">详细描述</p>
+					<p style="font-size: 12px;">改项目目前的负责人是.......</p>
+					</td>
+			</tr>
+		</table>
+		<input type="checkbox"  style="margin-left:35px;" /><span style="font-size: 16px;color: #c7c6c6;" ;>遵守保密协议</span>
+		<input type="submit" value="搜索" style="width: 50px;height: 25px;background: #388bc2;float: right;color: #fff;margin-right: 60px;" ></input>
+	</div>
+
+	<div class="box3_9" style="margin-left: 59px;">
+		<div class="box3_9_2"><p style="font-size: 12px;color: #afb0b0;line-height: 39px;margin-left: 20px;">日历</p></div>
+		<select style="width:60px;height: 23px;margin-right: 5px;margin:10px 0 0 20px;">
+			<option>2016</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select style="width:85px;height: 23px;margin-right: 5px;">
+			<option>4</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select style="width:75px;height: 23px;margin-right: 5px;">
+			<option>日期</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select style="width:60px;height: 23px;">
+			<option>今天</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<table style="width: 330px;height: 260px;margin:10px 0 0 20px;font-size: 12px;text-align: center;">
+			<tr >
+				<td>一</td>
+				<td>二</td>
+				<td>三</td>
+				<td>四</td>
+				<td>五</td>
+				<td>六</td>
+				<td>日</td>
+			</tr>
+			<tr >
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1<p style="color:#cd3539 ">愚人节</p></td>
+				<td>2<p>二十五</p></td>
+				<td>3<p>二十六</p></td>
+			</tr>	
+			<tr >
+				<td>4<p>二十七</p></td>
+				<td>5<p style="color:#cd3539 ">清明</p></td>
+				<td>6<p>二十九</p></td>
+				<td>7<p>三月</p></td>
+				<td>8<p>初二</p></td>
+				<td style="widows: 38px;height: 38px;border: 1px solid #f4c21d;">9<p>初三</p></td>
+				<td>10<p>初四</p></td>
+			</tr>	
+			<tr >
+				<td>11<p>初五</p></td>
+				<td style="widows: 38px;height: 38px;border: 1px solid #f4c21d;">12<p>初六</p></td>
+				<td>13<p>初七</p></td>
+				<td>14<p>初八</p></td>
+				<td>15<p>初九</p></td>
+				<td>16<p>初十</p></td>
+				<td>17<p>十一</p></td>
+			</tr>	
+			<tr >
+				<td>18<p>十二</p></td>
+				<td style="widows: 38px;height: 38px;border: 1px solid #f4c21d;">19<p>十三</p></td>
+				<td>20<p>十四</p></td>
+				<td>21<p>十五</p></td>
+				<td>22<p>十六</p></td>
+				<td>23<p>十七</p></td>
+				<td>24<p>十八</p></td>
+			</tr>	
+			<tr >
+				<td>25<p>十九</p></td>
+				<td>26<p>二十</p></td>
+				<td>27<p>二十一</p></td>
+				<td>28<p>二十二</p></td>
+				<td>29<p>二十三</p></td>
+				<td>30<p>二十四</p></td>
+				<td>31<p>二十五</p></td>
+			</tr>		
+		</table>
+	</div>
+	<div class="box3_8">
+		<div class="box3_8_2"><p style="font-size: 12px;color: #afb0b0;line-height: 39px;margin-left: 20px;">汽车行业品牌榜</p></div>
+		<div  style="width: 100%;height: 100%;text-align: center;margin:18px 0 0 40px;" >
+			<table rules="all" style="border:1px solid #cacbcb;width: 450px;height: 275px;font-size: 12px;">
+				<tr>
+					<td style="width: 10%">排名</td>
+					<td style="width: 20%">品牌</td>
+					<td style="width: 70%">搜索指数</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>大众</td>
+					<td>
+					987654321
+					<div class="box3_8_5"><div class="rank1"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>大众</td>
+					<td>
+					887654321
+					<div class="box3_8_5"><div class="rank2"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>大众</td>
+					<td>
+					787654321
+					<div class="box3_8_5"><div class="rank3"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>大众</td>
+					<td>
+					687654321
+					<div class="box3_8_5"><div class="rank4"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>大众</td>
+					<td>
+					587654321
+					<div class="box3_8_5"><div class="rank5"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>大众</td>
+					<td>
+					487654321
+					<div class="box3_8_5"><div class="rank6"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>大众</td>
+					<td>
+					87654321
+					<div class="box3_8_5"><div class="rank7"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>大众</td>
+					<td>
+					287654321
+					<div class="box3_8_5"><div class="rank8"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>大众</td>
+					<td>
+					187654321
+					<div class="box3_8_5"><div class="rank9"></div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>大众</td>
+					<td>
+					87654321
+					<div class="box3_8_5"><div class="rank10"></div></div>
+					</td>
+				</tr>
+			</table>
+	</div>	
+	</div>
+</div>
+</body>
+</html>

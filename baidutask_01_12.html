@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>baidu_task_01_11</title>
+	<style>
+	*{padding: 0;margin:0;}
+	.box1{
+		width: 325px;
+		height: 330px;
+		margin: 36px 0 0 58px;
+	}
+	.box1 th{
+		background: #000;
+		color: #fff;
+	}
+	.box1 tr{
+		font-weight: bold;
+		font-size: 22px;
+	}
+	.box1 tr:nth-child(2n+1){
+		background:#ccc;
+	}
+
+	.box2{
+		border: 1px solid #ccc;
+		margin-top: 50px;
+	}
+	.box2:hover{
+		width: 296px;
+		height: 30px;
+		box-shadow: 0 0 10px #7fb0ea;
+		border: none;
+		animation-duration: 2s;
+		animation-name: expand;
+		-moz-animation-name: expand;
+		-webkit-animation-name: expand;
+			
+	}
+	@keyframes expand{
+		from{width: 140px;}
+		to{width: 296px;}
+	}
+
+	.banner{
+		width: 300px;
+		height: 100px;
+		position: relative;
+		overflow: hidden;
+		margin-top: 150px;
+		margin-left: 50px;
+	}
+	.banner-container{
+		width: 300%;
+		height: 100%;
+		position: relative;
+		left: 0;
+		transition: 1s left;
+		font-size: 0;
+    	word-spacing: 0;
+    	letter-spacing: 0;
+	}
+	.banner-container li{
+		display: inline-block;
+		list-style: none;
+		width: 300px;
+		height: 100px;
+	}
+	.banner-container li:nth-child(1){background:blue;}
+	.banner-container li:nth-child(2){background:red;}
+	.banner-container li:nth-child(3){background:green;}
+	.banner-controller{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.banner-controller a{
+		margin: 5px;
+		float: right;
+		width: 30px;
+		height: 30px;
+		opacity: 0.5;
+		background: #ccc;
+		font-size: 18px;
+		background: #fff;
+		text-align: center;
+		line-height: 30px;
+		color: #ccc;
+		text-decoration: none;
+		display: inline-block;
+	}
+	.banner-controller a:hover{background: #000;}
+	#blue1:target~.banner-container{left: 0;}
+	#red2:target~.banner-container{left: -100%;}
+	#green3:target~.banner-container{left: -200%;}
+	</style>
+</head>
+<body>
+<div class="box1">
+	<table>
+	<tr>
+		<th>排名</th>
+		<th>网站</th>
+		<th>热度</th>
+	</tr>
+	<tr style="color: #e53f3e;">
+		<td>1.</td>
+		<td>百度前端技术学院</td>
+		<td>13000</td>
+	</tr>
+	<tr style="color: #e53f3e;">
+		<td>2.</td>
+		<td>百度前端技术学院</td>
+		<td>12000</td>
+	</tr>
+	<tr style="color: #e53f3e;">
+		<td>3.</td>
+		<td>百度前端技术学院</td>
+		<td>11000</td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td>百度前端技术学院</td>
+		<td>10000</td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td>百度前端技术学院</td>
+		<td>9000</td>
+	</tr>
+	<tr>
+		<td>6.</td>
+		<td>百度前端技术学院</td>
+		<td>8000</td>
+	</tr>
+	<tr>
+		<td>7.</td>
+		<td>百度前端技术学院</td>
+		<td>7000</td>
+	</tr>
+	<tr>
+		<td>8.</td>
+		<td>百度前端技术学院</td>
+		<td>6000</td>
+	</tr>
+	<tr>
+		<td>9.</td>
+		<td>百度前端技术学院</td>
+		<td>5000</td>
+	</tr>
+	<tr>
+		<td>10.</td>
+		<td>百度前端技术学院</td>
+		<td>4000</td>
+	</tr>
+	</table>
+	<input class="box2" type="text" style="width: 140px;height: 30px;"></input>
+</div>
+
+<div class="banner">
+	<span id="green3"></span>
+    <span id="red2"></span>
+    <span id="blue3"></span>
+	<ul class="banner-container">
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div class="banner-controller">
+		<a href="#green3">3</a>
+		<a href="#red2">2</a>
+		<a href="#blue1">1</a>
+	</div>
+</div>
+
+
+</body>
+</html>
